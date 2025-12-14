@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Predict & Suggest Interventions</h2>
+
+  {% if error %}\
+    <p class="warning">{{ error }}</p>
+  {% endif %}
+
+  {% if trained %}\
+  <form method="post">
+    <fieldset>
+      <legend>Student info</legend>
+      <label>student_id: <input name="student_id"></label>
+      <label>name: <input name="name"></label><br>
+      <label>attendance_percent: <input name="attendance_percent" value="80"></label>
+      <label>avg_assignment_score: <input name="avg_assignment_score" value="70"></label>
+      <label>study_hours_per_week: <input name="study_hours_per_week" value="6"></label>
+      <label>behavior_incidents: <input name="behavior_incidents" value="0"></label>
+      <label>previous_grade: <input name="previous_grade" value="75"></label>
+    </fieldset>
+    <p><button type="submit">Predict & Suggest</button></p>
+  </form>
+  {% endif %}
+
+  {% if result %}\
+    <h3>Result</h3>
+    <p>Predicted label: <strong>{{ result.predicted }}</strong></p>
+    <p>Confidence: <strong>{{ result.confidence }}</strong></p>
+    <h4>Suggested interventions</h4>
+    <ul>
+      {% for s in result.suggestions %}\
+        <li>{{ s }}</li>
+      {% endfor %}\
+    </ul>
+  {% endif %}\
+{% endblock %}\

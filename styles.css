@@ -1,0 +1,18 @@
+body { font-family: system-ui, Arial, sans-serif; margin:0; padding:0; background: #f6f8fa; color:#111; }
+.topbar { background:#0b5cff; color:white; padding:12px 20px; }
+.topbar h1 { margin:0; font-size:20px; display:inline-block; }
+.topbar nav { display:inline-block; margin-left:20px; font-size:14px; }
+.topbar nav a { color:white; text-decoration:none; padding: 0 5px; }
+.topbar nav a:hover { text-decoration:underline; }
+.container { padding:20px; max-width:1000px; margin:0 auto; }
+input { margin:6px 8px 12px 0; padding:6px; border: 1px solid #ccc; border-radius: 4px; }
+button { background:#0b5cff; color:white; border:none; padding:8px 12px; border-radius:6px; cursor:pointer;}
+button:hover { opacity:0.95; }
+.table-wrap { background:white; padding:10px; border-radius:8px; box-shadow: 0 1px 4px rgba(0,0,0,0.06);}
+.table { width:100%; border-collapse:collapse; }
+.table th, .table td { border:1px solid #ddd; padding:8px; text-align:left; }
+.warning { color:#b45; background:#ffdede; padding:8px; border-radius:6px; }
+footer.footer { text-align:center; padding:12px; color:#666; font-size:14px; margin-top:30px; }
+fieldset { border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; }
+legend { font-weight: bold; }
+label { display: inline-block; margin-right: 10px; }

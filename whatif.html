@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>What-If Simulator</h2>
+  {% if error %}
+    <p class="warning">{{ error }}</p>
+  {% endif %}
+
+  <form method="post">
+    <label>attendance_percent: <input name="attendance_percent" value="{{ defaults.attendance_percent if defaults else 80 }}"></label>
+    <label>avg_assignment_score: <input name="avg_assignment_score" value="{{ defaults.avg_assignment_score if defaults else 70 }}"></label>
+    <label>study_hours_per_week: <input name="study_hours_per_week" value="{{ defaults.study_hours_per_week if defaults else 6 }}"></label>
+    <label>behavior_incidents: <input name="behavior_incidents" value="{{ defaults.behavior_incidents if defaults else 0 }}"></label>
+    <label>previous_grade: <input name="previous_grade" value="{{ defaults.previous_grade if defaults else 75 }}"></label>
+    <p><button type="submit">Simulate</button></p>
+  </form>
+
+  {% if result %}
+    <h3>Simulated Prediction</h3>
+    <p>Predicted: <strong>{{ result.predicted }}</strong> (conf: {{ result.confidence }})</p>
+    <h4>Interventions</h4>
+    <ul>
+      {% for s in result.suggestions %}
+        <li>{{ s }}</li>
+      {% endfor %}
+    </ul>
+    <p>Try changing attendance or assignment score to see different outcomes.</p>
+  {% endif %}
+{% endblock %}

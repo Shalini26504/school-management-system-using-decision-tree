@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Student Management — Decision Tree</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Student Management (Decision Tree)</h1>
+    <nav>
+      <a href="{{ url_for('index') }}">Home</a> |
+      <a href="{{ url_for('upload') }}">Upload CSV</a> |
+      <a href="{{ url_for('students') }}">Students</a> |
+      <a href="{{ url_for('train') }}">Train & View Tree</a> |
+      <a href="{{ url_for('predict') }}">Predict / Suggest</a> |
+      <a href="{{ url_for('whatif') }}">What-If Simulator</a>
+    </nav>
+  </header>
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="footer">
+    <p>Adaptive Intervention Engine • Simple demo</p>
+  </footer>
+</body>
+</html>

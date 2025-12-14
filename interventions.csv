@@ -1,0 +1,23 @@
+student_id,name,predicted,confidence,suggestions
+,,OnTrack,0.6,No specific flags — continue monitoring. Recommend enrichment activities.
+1,shalini,OnTrack,0.6,Behavior incidents: Behavioural counselor meeting and one-on-one mentoring.
+2,tamil,OnTrack,0.6,No specific flags — continue monitoring. Recommend enrichment activities.
+1,shalini,OnTrack,0.6,No specific flags — continue monitoring. Recommend enrichment activities.
+1,shalini,OnTrack,0.6,Low attendance: Schedule parent meeting & attendance monitoring.|Introduce attendance incentives and daily check-ins.|Low assignment scores: Arrange targeted tutoring and assignment walkthroughs.|Low study hours: Provide time-management workshop and study plan.|Behavior incidents: Behavioural counselor meeting and one-on-one mentoring.
+1,shalini,OnTrack,0.6,No specific flags — continue monitoring. Recommend enrichment activities.
+1,shalini,OnTrack,0.6,Low attendance: Schedule parent meeting & attendance monitoring.|Introduce attendance incentives and daily check-ins.|Low study hours: Provide time-management workshop and study plan.|Behavior incidents: Behavioural counselor meeting and one-on-one mentoring.
+1,shalini,OnTrack,0.6,Low attendance: Schedule parent meeting & attendance monitoring.|Introduce attendance incentives and daily check-ins.|Behavior incidents: Behavioural counselor meeting and one-on-one mentoring.|Previously low grades: Remedial classes and frequent short formative quizzes.
+3,piriyanga,OnTrack,0.6,No specific flags — continue monitoring. Recommend enrichment activities.
+1,shalini,OnTrack,0.6,Low attendance: Schedule parent meeting & attendance monitoring.|Introduce attendance incentives and daily check-ins.|Behavior incidents: Behavioural counselor meeting and one-on-one mentoring.|Previously low grades: Remedial classes and frequent short formative quizzes.
+5,sowmiya,OnTrack,0.6,No specific flags — continue monitoring. Recommend enrichment activities.
+5,sowmiya,OnTrack,0.6,Low attendance: Schedule parent meeting & attendance monitoring.|Introduce attendance incentives and daily check-ins.|Low study hours: Provide time-management workshop and study plan.|Behavior incidents: Behavioural counselor meeting and one-on-one mentoring.
+,Student_3,OnTrack,1.00,No specific flags — continue monitoring. Recommend enrichment activities.
+7,Student_7,OnTrack,1.00,No specific flags — continue monitoring. Recommend enrichment activities.
+7,Student_7,AtRisk,0.67,Predicted AtRisk: Student needs immediate review.|Low study hours: Provide time-management workshop and study plan.|Previously low grades: Remedial classes and frequent short formative quizzes.
+7,Student_7,AtRisk,0.67,Predicted AtRisk: Student needs immediate review.|Low study hours: Provide time-management workshop and study plan.|Previously low grades: Remedial classes and frequent short formative quizzes.
+7,Student_7,AtRisk,0.67,Predicted AtRisk: Student needs immediate review.|Low study hours: Provide time-management workshop and study plan.|Previously low grades: Remedial classes and frequent short formative quizzes.
+7,Student_7,OnTrack,1.00,No specific flags — continue monitoring. Recommend enrichment activities.
+7,Student_7,AtRisk,1.00,Predicted AtRisk: Student needs immediate review.|Low attendance: Schedule parent meeting & attendance monitoring.|Low study hours: Provide time-management workshop and study plan.
+7,Student_7,OnTrack,1.00,No specific flags — continue monitoring. Recommend enrichment activities.
+1,student1,OnTrack,1.00,No specific flags — continue monitoring. Recommend enrichment activities.
+1,shalini,OnTrack,1.00,No specific flags — continue monitoring. Recommend enrichment activities.

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Dashboard</h2>
+  <p>Total students in CSV: <strong>{{ n_students }}</strong></p>
+  {% if err %}
+    <p class="warning">Train warning: {{ err }}</p>
+  {% endif %}
+  <p>Model trained: <strong>{{ 'Yes' if model_trained else 'No' }}</strong></p>
+  <ul>
+    <li><a href="{{ url_for('upload') }}">Upload/Replace CSV</a></li>
+    <li><a href="{{ url_for('students') }}">View Students</a></li>
+    <li><a href="{{ url_for('train') }}">Train & View Tree</a></li>
+    <li><a href="{{ url_for('predict') }}">Predict + Suggest Interventions</a></li>
+    <li><a href="{{ url_for('whatif') }}">What-If Simulator</a></li>
+  </ul>
+{% endblock %}

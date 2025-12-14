@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Model Training Complete</h2>
+  <p>The decision tree has been trained on the student data. Below is the text representation of the rules the model learned.</p>
+  
+  <div style="background:#fff; border:1px solid #ddd; padding:15px; border-radius:8px; font-family:monospace; white-space:pre-wrap; max-width:100%; overflow-x:auto;">{{ tree_text }}</div>
+
+  <p style="margin-top:20px;">You can now use the <a href="{{ url_for('predict') }}">Predict / Suggest</a> page or the <a href="{{ url_for('whatif') }}">What-If Simulator</a>.</p>
+{% endblock %}
